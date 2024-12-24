@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: eureka01
+  security:
+    user:
+      name: itzxg
+      password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://itzxg:123456@localhost:8005/eureka/
+    fetch-registry: false
+    register-with-eureka: false
